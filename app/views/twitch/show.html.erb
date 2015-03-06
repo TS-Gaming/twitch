@@ -1,0 +1,4 @@
+<div>Total Channels:<%= @response["_total"] %></div>
+<% @response["channels"].each do |i| %>
+  <%= render "channel", :i => i %>
+<% end %>
